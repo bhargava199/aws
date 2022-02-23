@@ -55,6 +55,7 @@
 				</configuration>
 			</plugin>
 		</plugins>
+		<finalName>cde</finalName>
 	</build>
 
 </project>

@@ -1,0 +1,16 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+      - cd codebuild-demo
+      - echo Entered the build phase...
+      - mvn clean package
+  post-build:
+    commands:
+    - echo Build completed successfully
+aritifacts:
+  files:
+    - codebuild-cde.jar
+  discard-paths: yes
+   
